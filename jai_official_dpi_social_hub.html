@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Official social links for Jai Official DPI. Connect on YouTube, Instagram and Facebook.">
+  <title>JAI OFFICIAL DPI | Connect</title>
+  <style>
+    :root { color-scheme: dark; --gold:#d8b46a; --gold2:#f3d99a; --muted:#aaa; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center; padding:28px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color:#f7f3eb;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(216,180,106,.16), transparent 45%),
+        linear-gradient(145deg,#050505,#15130f 55%,#080808);
+    }
+    .card {
+      width:min(100%,440px); padding:38px 26px 28px; border:1px solid rgba(216,180,106,.38);
+      border-radius:26px; text-align:center; background:rgba(15,15,15,.88);
+      box-shadow:0 24px 80px rgba(0,0,0,.55), inset 0 1px rgba(255,255,255,.04);
+    }
+    .monogram {
+      width:76px;height:76px;margin:0 auto 18px;border:1px solid var(--gold);
+      border-radius:22px;display:grid;place-items:center;color:var(--gold2);
+      font-size:28px;font-weight:900;letter-spacing:-2px;transform:rotate(-3deg);
+      box-shadow:0 0 34px rgba(216,180,106,.12);
+    }
+    h1 { margin:0; color:var(--gold2); font-size:clamp(25px,7vw,32px); letter-spacing:2px; }
+    .tagline { margin:10px 0 28px; color:var(--muted); font-size:12px; letter-spacing:3px; }
+    .rule { height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); margin:0 0 24px; }
+    .links { display:grid; gap:13px; }
+    .link {
+      min-height:62px; display:flex; align-items:center; gap:14px; padding:0 18px;
+      border:1px solid #39342a; border-radius:15px; text-decoration:none; color:#fff;
+      background:linear-gradient(110deg,#1d1b17,#111); transition:.2s ease;
+      text-align:left;
+    }
+    .link:hover { transform:translateY(-2px); border-color:var(--gold); background:#211e18; }
+    .icon { width:34px;height:34px;display:grid;place-items:center;border-radius:10px;font-size:18px;font-weight:800; }
+    .yt .icon { background:#3b1515;color:#ff4d4d; }
+    .ig .icon { background:#351b2b;color:#f48bc0; }
+    .fb .icon { background:#172843;color:#79aaff; }
+    .label { flex:1; }
+    .label strong { display:block;font-size:15px; }
+    .label small { display:block;color:#aaa;margin-top:3px;font-size:12px; }
+    .arrow { color:var(--gold);font-size:20px; }
+    .footer { margin:27px 0 0;color:#777;font-size:11px;letter-spacing:1.6px; }
+    @media (prefers-reduced-motion:reduce) { .link { transition:none; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="monogram" aria-hidden="true">JAI</div>
+    <h1>JAI OFFICIAL DPI</h1>
+    <p class="tagline">MUSIC • LOVE • PASSION</p>
+    <div class="rule"></div>
+    <nav class="links" aria-label="Official social media links">
+      <a class="link yt" href="https://www.youtube.com/@jaiofficialdpi" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true">▶</span>
+        <span class="label"><strong>YouTube</strong><small>Subscribe to the channel</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link ig" href="https://www.instagram.com/jaiofficialdpi_music?obrf=ZzQzaWIybTlqMDdr" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true">◎</span>
+        <span class="label"><strong>Instagram</strong><small>Follow for updates</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link fb" href="https://www.facebook.com/profile.php?id=61594767866472&amp;sk=followers" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true">f</span>
+        <span class="label"><strong>Facebook</strong><small>Follow the page</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+    <p class="footer">OFFICIAL SOCIAL LINKS</p>
+  </main>
+</body>
+</html>
